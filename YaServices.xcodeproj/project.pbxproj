@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		056EFE805E4A6BD2BEF89C29 /* YaUserLocationObjectListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE69600A9997ADD4E6ABE49 /* YaUserLocationObjectListener.swift */; };
+		082D8E7856D83536B87AE578 /* MapRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525B037DFA726E47095623DB /* MapRegion.swift */; };
+		16C9063D26735939619A714B /* YaMapObjectTapListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C885145A46CC89316FD3DD /* YaMapObjectTapListener.swift */; };
+		1B56332D951DBE76DAF70B37 /* BaseMapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A358A16ABAA6C9D52C6E6E66 /* BaseMapManager.swift */; };
+		1BECFDD45EB08B0768207056 /* YaTilesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEA6BED6A14764B53C6E3FB /* YaTilesProvider.swift */; };
+		1C61FB1A95EC01CCDB9B08EA /* MapGeoJsonObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEF22C1DC3105048DF77102 /* MapGeoJsonObject.swift */; };
+		3B72994614DCF8A7BB4BE623 /* YaSearchManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A381B6FB0955DDB1F0DE10E /* YaSearchManagerImpl.swift */; };
+		41F58F28F4F4D7F7530114BE /* TileKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC026F5AB597220BB1C720EF /* TileKey.swift */; };
+		49189C0ABDBFCD4DADFCD1A2 /* MapPolygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C01CCC3DB937B531154708 /* MapPolygon.swift */; };
+		4F2C2AB4EE696F3006DE9491 /* GeoJsonGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157500FA19981683B18F8424 /* GeoJsonGenerator.swift */; };
+		4FE05763CB980AFCA9D8E96F /* YaMapCameraListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC6C3DC884C15A9F2B878F3 /* YaMapCameraListener.swift */; };
+		570049238928F6E2B244B453 /* TileInRegionGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C58A91A9193CEEBE6BB63B /* TileInRegionGenerator.swift */; };
+		5B109B0F24F50D420006A7E9 /* AnyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B109B0D24F50D410006A7E9 /* AnyEncodable.swift */; };
+		5B109B1024F50D420006A7E9 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B109B0E24F50D420006A7E9 /* StringExt.swift */; };
+		5B109B1224F50D790006A7E9 /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B109B1124F50D790006A7E9 /* UIColorExt.swift */; };
+		5DC866C63084E903D522105A /* AutoEquatable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8E7EAA85458FA5ED530FA9 /* AutoEquatable.generated.swift */; };
+		61435FB6CEB805DC96CBFDD2 /* MapRegionObserverMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78FC66EEAED60998E8F47BB /* MapRegionObserverMode.swift */; };
+		627CC6C78675F3C02DE543D4 /* MapPolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6BC6F42CB158972EC253D9 /* MapPolyline.swift */; };
+		6BFFC7131AACE34D1CD47982 /* YaSearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AFBD5E68DD35861DAC7705 /* YaSearchRequest.swift */; };
+		75831056F72CD4DEF6543D85 /* BaseMapElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42D608E3A94AF34F795C6B7 /* BaseMapElement.swift */; };
+		7D18D0516D6BFA9553494AE1 /* YMKCameraPositionExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B047808C1814AA0C80699A /* YMKCameraPositionExt.swift */; };
+		7E041C3F8CC1CDD04CA7A4CF /* TilesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C7DA58D74D945FBC30FC07 /* TilesStorage.swift */; };
+		8815203FB5EB46DE9060867E /* YaMapTapListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2DEC60F24CD104A6EFA3F5 /* YaMapTapListener.swift */; };
+		8A12AB874365553DCA834BC6 /* TileKey+YMK.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A9AA8F49209C6D6EA8EDF6 /* TileKey+YMK.swift */; };
+		8A99B1D1004BB6DD1436C86D /* BaseMapLinedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12B9633BFE99DA9967B3AC3 /* BaseMapLinedShape.swift */; };
+		91771DF2D77A42EB43316F40 /* MapManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96067DBA7447EA3290652FE5 /* MapManagerDelegate.swift */; };
+		91D88421B8F2CDF90539FE5F /* YaMapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F261B47E97C5EE307459A06B /* YaMapManager.swift */; };
+		9BC12FAE999379A820C3C6F9 /* YaSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1264E776531C1AEC5B036AC /* YaSearchManager.swift */; };
+		A574944D635A09714CAF7ADA /* MapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889FAE7E132D5FE53A8C45DD /* MapManager.swift */; };
+		AEA2987FB2C796611EAA1B84 /* GeoJsonFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF9D38CED392E547FD44BF9 /* GeoJsonFeature.swift */; };
+		B0EBFC056D38B9CD58FE125D /* MapMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE46D21EC79E37B7A3929028 /* MapMarker.swift */; };
+		B28B8636AC4F2607E7E7EB3B /* MapGeoJsonLayerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F6F6387F5AD9342F83776B /* MapGeoJsonLayerInfo.swift */; };
+		B721F7CD4EFF6A8E15D40D62 /* DisplayedTilesQuadKeyStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B92772AC201A13C007A379A /* DisplayedTilesQuadKeyStorage.swift */; };
+		B7FF314ADB2B39A3AE5EB521 /* TilesCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312B923837E14342EB1CCEAE /* TilesCache.swift */; };
+		B949238ACCF8F763ED233B5F /* YaGeoJsonGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C26B6E078032422DEB479 /* YaGeoJsonGenerator.swift */; };
+		BA50E1B16C9E55E661AE6479 /* PointOfInterest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9050486C3B1CEECB0D2023A /* PointOfInterest.swift */; };
+		C1EB8EC61C5F37E495E00A44 /* MapCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99396A9AFE67BF552A12EF3D /* MapCircle.swift */; };
+		CA7902BFBC09F1310617F5DF /* MapGeoJsonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F037F13733B55CE8B87C48 /* MapGeoJsonStyle.swift */; };
+		CBA8203390BFBFB62B3AF347 /* YMKVisibleRegionExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6C25A7C877AD3266F822F /* YMKVisibleRegionExt.swift */; };
+		D363B4DC05A474E1E8CD7A2B /* YaMapLayerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB626AB8B2AD38E17E49365 /* YaMapLayerData.swift */; };
+		DB24259C9CE5F4A907DF0D27 /* YaTilesGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8194D6A677AA0A9CC7214C8 /* YaTilesGenerator.swift */; };
+		E06B52C0BEA8CCA6851348C7 /* MapAnimatedMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4158671D1CB3414FC3F8C853 /* MapAnimatedMarker.swift */; };
+		E2CBBD313FCEB66038989B90 /* MapDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A010A86FC04342C772B6B8DE /* MapDelegate.swift */; };
+		F23D8DE05214D5682B340991 /* SearchBounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22682D90F5F1C747384E1131 /* SearchBounds.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03B047808C1814AA0C80699A /* YMKCameraPositionExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMKCameraPositionExt.swift; sourceTree = "<group>"; };
+		11C01CCC3DB937B531154708 /* MapPolygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPolygon.swift; sourceTree = "<group>"; };
+		12C885145A46CC89316FD3DD /* YaMapObjectTapListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaMapObjectTapListener.swift; sourceTree = "<group>"; };
+		157500FA19981683B18F8424 /* GeoJsonGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoJsonGenerator.swift; sourceTree = "<group>"; };
+		17AFBD5E68DD35861DAC7705 /* YaSearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaSearchRequest.swift; sourceTree = "<group>"; };
+		22682D90F5F1C747384E1131 /* SearchBounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBounds.swift; sourceTree = "<group>"; };
+		2FEA6BED6A14764B53C6E3FB /* YaTilesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaTilesProvider.swift; sourceTree = "<group>"; };
+		312B923837E14342EB1CCEAE /* TilesCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TilesCache.swift; sourceTree = "<group>"; };
+		3CC6C3DC884C15A9F2B878F3 /* YaMapCameraListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaMapCameraListener.swift; sourceTree = "<group>"; };
+		3FF9D38CED392E547FD44BF9 /* GeoJsonFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoJsonFeature.swift; sourceTree = "<group>"; };
+		4158671D1CB3414FC3F8C853 /* MapAnimatedMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnimatedMarker.swift; sourceTree = "<group>"; };
+		4A2DEC60F24CD104A6EFA3F5 /* YaMapTapListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaMapTapListener.swift; sourceTree = "<group>"; };
+		525B037DFA726E47095623DB /* MapRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRegion.swift; sourceTree = "<group>"; };
+		5B109B0D24F50D410006A7E9 /* AnyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyEncodable.swift; sourceTree = "<group>"; };
+		5B109B0E24F50D420006A7E9 /* StringExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		5B109B1124F50D790006A7E9 /* UIColorExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
+		7D8E7EAA85458FA5ED530FA9 /* AutoEquatable.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoEquatable.generated.swift; sourceTree = "<group>"; };
+		889FAE7E132D5FE53A8C45DD /* MapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapManager.swift; sourceTree = "<group>"; };
+		88B6C25A7C877AD3266F822F /* YMKVisibleRegionExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMKVisibleRegionExt.swift; sourceTree = "<group>"; };
+		9021E67BD7F3625C1FDC6F98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		95F037F13733B55CE8B87C48 /* MapGeoJsonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapGeoJsonStyle.swift; sourceTree = "<group>"; };
+		96067DBA7447EA3290652FE5 /* MapManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapManagerDelegate.swift; sourceTree = "<group>"; };
+		99396A9AFE67BF552A12EF3D /* MapCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCircle.swift; sourceTree = "<group>"; };
+		9A381B6FB0955DDB1F0DE10E /* YaSearchManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaSearchManagerImpl.swift; sourceTree = "<group>"; };
+		9B92772AC201A13C007A379A /* DisplayedTilesQuadKeyStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayedTilesQuadKeyStorage.swift; sourceTree = "<group>"; };
+		A010A86FC04342C772B6B8DE /* MapDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDelegate.swift; sourceTree = "<group>"; };
+		A1264E776531C1AEC5B036AC /* YaSearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaSearchManager.swift; sourceTree = "<group>"; };
+		A358A16ABAA6C9D52C6E6E66 /* BaseMapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMapManager.swift; sourceTree = "<group>"; };
+		A3C58A91A9193CEEBE6BB63B /* TileInRegionGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileInRegionGenerator.swift; sourceTree = "<group>"; };
+		AC026F5AB597220BB1C720EF /* TileKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileKey.swift; sourceTree = "<group>"; };
+		AEB626AB8B2AD38E17E49365 /* YaMapLayerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaMapLayerData.swift; sourceTree = "<group>"; };
+		B79C26B6E078032422DEB479 /* YaGeoJsonGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaGeoJsonGenerator.swift; sourceTree = "<group>"; };
+		C9A9AA8F49209C6D6EA8EDF6 /* TileKey+YMK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TileKey+YMK.swift"; sourceTree = "<group>"; };
+		CABEB386F1A27346BC403885 /* YaServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YaServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBEF22C1DC3105048DF77102 /* MapGeoJsonObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapGeoJsonObject.swift; sourceTree = "<group>"; };
+		CF6BC6F42CB158972EC253D9 /* MapPolyline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPolyline.swift; sourceTree = "<group>"; };
+		D12B9633BFE99DA9967B3AC3 /* BaseMapLinedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMapLinedShape.swift; sourceTree = "<group>"; };
+		D5F6F6387F5AD9342F83776B /* MapGeoJsonLayerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapGeoJsonLayerInfo.swift; sourceTree = "<group>"; };
+		D8194D6A677AA0A9CC7214C8 /* YaTilesGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaTilesGenerator.swift; sourceTree = "<group>"; };
+		E2C7DA58D74D945FBC30FC07 /* TilesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TilesStorage.swift; sourceTree = "<group>"; };
+		E42D608E3A94AF34F795C6B7 /* BaseMapElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMapElement.swift; sourceTree = "<group>"; };
+		E78FC66EEAED60998E8F47BB /* MapRegionObserverMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRegionObserverMode.swift; sourceTree = "<group>"; };
+		ECE69600A9997ADD4E6ABE49 /* YaUserLocationObjectListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaUserLocationObjectListener.swift; sourceTree = "<group>"; };
+		EE46D21EC79E37B7A3929028 /* MapMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMarker.swift; sourceTree = "<group>"; };
+		F261B47E97C5EE307459A06B /* YaMapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaMapManager.swift; sourceTree = "<group>"; };
+		F9050486C3B1CEECB0D2023A /* PointOfInterest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOfInterest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		006B1809BEF0D079C5A2104C /* yandexMaps */ = {
+			isa = PBXGroup;
+			children = (
+				26353D00A709FE23DA87F2F7 /* GeoJson */,
+				3CC6C3DC884C15A9F2B878F3 /* YaMapCameraListener.swift */,
+				F261B47E97C5EE307459A06B /* YaMapManager.swift */,
+				12C885145A46CC89316FD3DD /* YaMapObjectTapListener.swift */,
+				4A2DEC60F24CD104A6EFA3F5 /* YaMapTapListener.swift */,
+				ECE69600A9997ADD4E6ABE49 /* YaUserLocationObjectListener.swift */,
+				03B047808C1814AA0C80699A /* YMKCameraPositionExt.swift */,
+				88B6C25A7C877AD3266F822F /* YMKVisibleRegionExt.swift */,
+			);
+			path = yandexMaps;
+			sourceTree = "<group>";
+		};
+		09E93980DF24284EEE2F5814 /* items */ = {
+			isa = PBXGroup;
+			children = (
+				E42D608E3A94AF34F795C6B7 /* BaseMapElement.swift */,
+				D12B9633BFE99DA9967B3AC3 /* BaseMapLinedShape.swift */,
+				4158671D1CB3414FC3F8C853 /* MapAnimatedMarker.swift */,
+				99396A9AFE67BF552A12EF3D /* MapCircle.swift */,
+				EE46D21EC79E37B7A3929028 /* MapMarker.swift */,
+				11C01CCC3DB937B531154708 /* MapPolygon.swift */,
+				CF6BC6F42CB158972EC253D9 /* MapPolyline.swift */,
+			);
+			path = items;
+			sourceTree = "<group>";
+		};
+		0C008A49351BBD17D3DBD204 /* YaMaps */ = {
+			isa = PBXGroup;
+			children = (
+				09E93980DF24284EEE2F5814 /* items */,
+				CBCE709A83F3A7D7F366BFAC /* manager */,
+				006B1809BEF0D079C5A2104C /* yandexMaps */,
+			);
+			path = YaMaps;
+			sourceTree = "<group>";
+		};
+		237A3ADB4075CD9AE86470C0 /* GeoJson */ = {
+			isa = PBXGroup;
+			children = (
+				C7E021924FCF36CDE2D9291D /* generator */,
+				660742B07BEBAD5BBE57073D /* objects */,
+				9D7C24F778A5118DDABBC379 /* tiles */,
+			);
+			path = GeoJson;
+			sourceTree = "<group>";
+		};
+		26353D00A709FE23DA87F2F7 /* GeoJson */ = {
+			isa = PBXGroup;
+			children = (
+				C9A9AA8F49209C6D6EA8EDF6 /* TileKey+YMK.swift */,
+				B79C26B6E078032422DEB479 /* YaGeoJsonGenerator.swift */,
+				AEB626AB8B2AD38E17E49365 /* YaMapLayerData.swift */,
+				D8194D6A677AA0A9CC7214C8 /* YaTilesGenerator.swift */,
+				2FEA6BED6A14764B53C6E3FB /* YaTilesProvider.swift */,
+			);
+			path = GeoJson;
+			sourceTree = "<group>";
+		};
+		2D4EC08C145C18ADFEDD2E85 = {
+			isa = PBXGroup;
+			children = (
+				D221B63C8820E48DC30DF2B4 /* YaServices */,
+				FE5FA5810DA950633CDBE4A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		660742B07BEBAD5BBE57073D /* objects */ = {
+			isa = PBXGroup;
+			children = (
+				D5F6F6387F5AD9342F83776B /* MapGeoJsonLayerInfo.swift */,
+				CBEF22C1DC3105048DF77102 /* MapGeoJsonObject.swift */,
+				95F037F13733B55CE8B87C48 /* MapGeoJsonStyle.swift */,
+			);
+			path = objects;
+			sourceTree = "<group>";
+		};
+		9D7C24F778A5118DDABBC379 /* tiles */ = {
+			isa = PBXGroup;
+			children = (
+				9B92772AC201A13C007A379A /* DisplayedTilesQuadKeyStorage.swift */,
+				A3C58A91A9193CEEBE6BB63B /* TileInRegionGenerator.swift */,
+				AC026F5AB597220BB1C720EF /* TileKey.swift */,
+				312B923837E14342EB1CCEAE /* TilesCache.swift */,
+				E2C7DA58D74D945FBC30FC07 /* TilesStorage.swift */,
+			);
+			path = tiles;
+			sourceTree = "<group>";
+		};
+		C7E021924FCF36CDE2D9291D /* generator */ = {
+			isa = PBXGroup;
+			children = (
+				3FF9D38CED392E547FD44BF9 /* GeoJsonFeature.swift */,
+				157500FA19981683B18F8424 /* GeoJsonGenerator.swift */,
+			);
+			path = generator;
+			sourceTree = "<group>";
+		};
+		CBCE709A83F3A7D7F366BFAC /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				237A3ADB4075CD9AE86470C0 /* GeoJson */,
+				A358A16ABAA6C9D52C6E6E66 /* BaseMapManager.swift */,
+				A010A86FC04342C772B6B8DE /* MapDelegate.swift */,
+				889FAE7E132D5FE53A8C45DD /* MapManager.swift */,
+				96067DBA7447EA3290652FE5 /* MapManagerDelegate.swift */,
+				525B037DFA726E47095623DB /* MapRegion.swift */,
+				E78FC66EEAED60998E8F47BB /* MapRegionObserverMode.swift */,
+			);
+			path = manager;
+			sourceTree = "<group>";
+		};
+		D221B63C8820E48DC30DF2B4 /* YaServices */ = {
+			isa = PBXGroup;
+			children = (
+				0C008A49351BBD17D3DBD204 /* YaMaps */,
+				E1451C47DA7C7E4C88358D74 /* YaSearch */,
+				7D8E7EAA85458FA5ED530FA9 /* AutoEquatable.generated.swift */,
+				5B109B0D24F50D410006A7E9 /* AnyEncodable.swift */,
+				5B109B0E24F50D420006A7E9 /* StringExt.swift */,
+				5B109B1124F50D790006A7E9 /* UIColorExt.swift */,
+				9021E67BD7F3625C1FDC6F98 /* Info.plist */,
+			);
+			path = YaServices;
+			sourceTree = "<group>";
+		};
+		E1451C47DA7C7E4C88358D74 /* YaSearch */ = {
+			isa = PBXGroup;
+			children = (
+				F9050486C3B1CEECB0D2023A /* PointOfInterest.swift */,
+				22682D90F5F1C747384E1131 /* SearchBounds.swift */,
+				A1264E776531C1AEC5B036AC /* YaSearchManager.swift */,
+				9A381B6FB0955DDB1F0DE10E /* YaSearchManagerImpl.swift */,
+				17AFBD5E68DD35861DAC7705 /* YaSearchRequest.swift */,
+			);
+			path = YaSearch;
+			sourceTree = "<group>";
+		};
+		FE5FA5810DA950633CDBE4A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CABEB386F1A27346BC403885 /* YaServices.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		146D4F384B74B8AE368357C1 /* YaServices */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 882EFC4444C6E653A054915E /* Build configuration list for PBXNativeTarget "YaServices" */;
+			buildPhases = (
+				D1FC799EAEFE7E0B8BF020C4 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YaServices;
+			productName = YaServices;
+			productReference = CABEB386F1A27346BC403885 /* YaServices.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78D5E6443DB9B8ADEA8F5D10 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					146D4F384B74B8AE368357C1 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E9C36F5529478719173EDD9B /* Build configuration list for PBXProject "YaServices" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = ru;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				ru,
+				en,
+			);
+			mainGroup = 2D4EC08C145C18ADFEDD2E85;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				146D4F384B74B8AE368357C1 /* YaServices */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1FC799EAEFE7E0B8BF020C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DC866C63084E903D522105A /* AutoEquatable.generated.swift in Sources */,
+				75831056F72CD4DEF6543D85 /* BaseMapElement.swift in Sources */,
+				8A99B1D1004BB6DD1436C86D /* BaseMapLinedShape.swift in Sources */,
+				1B56332D951DBE76DAF70B37 /* BaseMapManager.swift in Sources */,
+				B721F7CD4EFF6A8E15D40D62 /* DisplayedTilesQuadKeyStorage.swift in Sources */,
+				AEA2987FB2C796611EAA1B84 /* GeoJsonFeature.swift in Sources */,
+				4F2C2AB4EE696F3006DE9491 /* GeoJsonGenerator.swift in Sources */,
+				5B109B1024F50D420006A7E9 /* StringExt.swift in Sources */,
+				E06B52C0BEA8CCA6851348C7 /* MapAnimatedMarker.swift in Sources */,
+				C1EB8EC61C5F37E495E00A44 /* MapCircle.swift in Sources */,
+				E2CBBD313FCEB66038989B90 /* MapDelegate.swift in Sources */,
+				5B109B0F24F50D420006A7E9 /* AnyEncodable.swift in Sources */,
+				B28B8636AC4F2607E7E7EB3B /* MapGeoJsonLayerInfo.swift in Sources */,
+				1C61FB1A95EC01CCDB9B08EA /* MapGeoJsonObject.swift in Sources */,
+				CA7902BFBC09F1310617F5DF /* MapGeoJsonStyle.swift in Sources */,
+				A574944D635A09714CAF7ADA /* MapManager.swift in Sources */,
+				91771DF2D77A42EB43316F40 /* MapManagerDelegate.swift in Sources */,
+				B0EBFC056D38B9CD58FE125D /* MapMarker.swift in Sources */,
+				49189C0ABDBFCD4DADFCD1A2 /* MapPolygon.swift in Sources */,
+				627CC6C78675F3C02DE543D4 /* MapPolyline.swift in Sources */,
+				082D8E7856D83536B87AE578 /* MapRegion.swift in Sources */,
+				61435FB6CEB805DC96CBFDD2 /* MapRegionObserverMode.swift in Sources */,
+				BA50E1B16C9E55E661AE6479 /* PointOfInterest.swift in Sources */,
+				F23D8DE05214D5682B340991 /* SearchBounds.swift in Sources */,
+				570049238928F6E2B244B453 /* TileInRegionGenerator.swift in Sources */,
+				8A12AB874365553DCA834BC6 /* TileKey+YMK.swift in Sources */,
+				41F58F28F4F4D7F7530114BE /* TileKey.swift in Sources */,
+				B7FF314ADB2B39A3AE5EB521 /* TilesCache.swift in Sources */,
+				7E041C3F8CC1CDD04CA7A4CF /* TilesStorage.swift in Sources */,
+				7D18D0516D6BFA9553494AE1 /* YMKCameraPositionExt.swift in Sources */,
+				CBA8203390BFBFB62B3AF347 /* YMKVisibleRegionExt.swift in Sources */,
+				B949238ACCF8F763ED233B5F /* YaGeoJsonGenerator.swift in Sources */,
+				4FE05763CB980AFCA9D8E96F /* YaMapCameraListener.swift in Sources */,
+				D363B4DC05A474E1E8CD7A2B /* YaMapLayerData.swift in Sources */,
+				91D88421B8F2CDF90539FE5F /* YaMapManager.swift in Sources */,
+				16C9063D26735939619A714B /* YaMapObjectTapListener.swift in Sources */,
+				8815203FB5EB46DE9060867E /* YaMapTapListener.swift in Sources */,
+				9BC12FAE999379A820C3C6F9 /* YaSearchManager.swift in Sources */,
+				3B72994614DCF8A7BB4BE623 /* YaSearchManagerImpl.swift in Sources */,
+				6BFFC7131AACE34D1CD47982 /* YaSearchRequest.swift in Sources */,
+				DB24259C9CE5F4A907DF0D27 /* YaTilesGenerator.swift in Sources */,
+				5B109B1224F50D790006A7E9 /* UIColorExt.swift in Sources */,
+				1BECFDD45EB08B0768207056 /* YaTilesProvider.swift in Sources */,
+				056EFE805E4A6BD2BEF89C29 /* YaUserLocationObjectListener.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		25376E5523EC8C9C6F74822A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = YaServices;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.2;
+			};
+			name = Debug;
+		};
+		32A44F73FC361576F379045D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = YaServices/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.fabit.Lib.YaServices;
+				PRODUCT_MODULE_NAME = YaServices;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		49F0AED9082087808D2E7DBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = YaServices;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D0D875925D962DAD019E13A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = YaServices/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.fabit.Lib.YaServices;
+				PRODUCT_MODULE_NAME = YaServices;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		882EFC4444C6E653A054915E /* Build configuration list for PBXNativeTarget "YaServices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D0D875925D962DAD019E13A /* Debug */,
+				32A44F73FC361576F379045D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9C36F5529478719173EDD9B /* Build configuration list for PBXProject "YaServices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25376E5523EC8C9C6F74822A /* Debug */,
+				49F0AED9082087808D2E7DBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78D5E6443DB9B8ADEA8F5D10 /* Project object */;
+}
