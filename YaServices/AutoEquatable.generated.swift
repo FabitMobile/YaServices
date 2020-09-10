@@ -1,6 +1,3 @@
-// Generated using Sourcery 0.18.0 — https://github.com/krzysztofzablocki/Sourcery
-// DO NOT EDIT
-
 // swiftlint:disable file_length
 private func compareOptionals<T>(lhs: T?, rhs: T?, compare: (_ lhs: T, _ rhs: T) -> Bool) -> Bool {
     switch (lhs, rhs) {
@@ -22,9 +19,10 @@ private func compareArrays<T>(lhs: [T], rhs: [T], compare: (_ lhs: T, _ rhs: T) 
     return true
 }
 
-
 // MARK: - AutoEquatable for classes, protocols, structs
+
 // MARK: - PointOfInterest AutoEquatable
+
 extension PointOfInterest: Equatable {}
 public func == (lhs: PointOfInterest, rhs: PointOfInterest) -> Bool {
     guard lhs.title == rhs.title else { return false }

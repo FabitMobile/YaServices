@@ -9,7 +9,7 @@ open class GeoJsonGenerator {
 
         let lines = objects.compactMap { $0 as? MapGeoJsonLine }
 
-        for (i, line) in lines.enumerated() {
+        for line in lines {
             let feature = makeFeature(style: line.style,
                                       coordinates: line.coordinates)
 
@@ -21,7 +21,8 @@ open class GeoJsonGenerator {
         let encoder = JSONEncoder()
         encoder.outputFormatting = .prettyPrinted
         guard let data = try? encoder.encode(collection) else {
-            preconditionFailure("can not serialize josn")
+            assertionFailure("can not serialize josn")
+            return Data()
         }
         return data
     }

@@ -1,5 +1,3 @@
-// MARK: regexp
-
 public extension String {
     func replacingByRegExp(of: String, with: String) -> String {
         replacingOccurrences(of: of,

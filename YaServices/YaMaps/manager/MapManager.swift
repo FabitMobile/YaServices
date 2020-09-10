@@ -77,5 +77,5 @@ public protocol MapManager: AnyObject {
     func worldToXY(withGeoPoint geoPoint: CLLocationCoordinate2D, zoom: Int) -> (x: Double, y: Double)?
     func xyToWorld(x: Double, y: Double, zoom: Int) -> CLLocationCoordinate2D?
 
-    func setStyle(lightness: Double, saturation: Double)
+    func setStyle(lightness: Double, saturation: Double) throws
 }

@@ -228,7 +228,7 @@ public class BaseMapManager: MapManager {
         fatalError("not implemented")
     }
 
-    public func setStyle(lightness: Double, saturation: Double) {
+    public func setStyle(lightness: Double, saturation: Double) throws {
         fatalError("not implemented")
     }
 }

@@ -639,21 +639,23 @@ public class YaMapManager: BaseMapManager {
         return CLLocationCoordinate2D(latitude: point.latitude, longitude: point.longitude)
     }
 
-    override public func setStyle(lightness: Double, saturation: Double) {
+    public struct MapSetStyleFailed: Error {}
+    
+    override public func setStyle(lightness: Double, saturation: Double) throws {
         guard let map = yaMapView?.mapWindow?.map else { return }
         let style =
             """
             [
                 {
-                    "featureType" : "all",
                     "stylers" : {
-                        "saturation" : "\(saturation)",
-                        "lightness" : "\(lightness)"
+                        "saturation" : \(saturation),
+                        "lightness" : \(lightness)
                     }
                 }
             ]
             """
-        map.setMapStyleWithStyle(style)
+        let result = map.setMapStyleWithStyle(style)
+        if !result { throw MapSetStyleFailed() }
     }
 
     // MARK: - marker
@@ -943,7 +945,8 @@ public class YaMapManager: BaseMapManager {
 
     override public func invalidateLayer(layerId: String, withVersion version: String) {
         guard let data = customLayers.first(where: { $0.layerId == layerId }) else {
-            preconditionFailure("layer with id: \(layerId) is not presented")
+            assertionFailure("layer with id: \(layerId) is not presented")
+            return
         }
         data.tileProvider.version = version
         data.layer.invalidate(withVersion: version)
@@ -955,9 +958,13 @@ public class YaMapManager: BaseMapManager {
                                              styles: [MapGeoJsonStyle],
                                              generator: TileInRegionGenerator,
                                              keyStorage: DisplayedTilesQuadKeyStorage) {
-        guard let map = yaMapView?.mapWindow.map else { preconditionFailure("map was not set correclty") }
+        guard let map = yaMapView?.mapWindow.map else {
+            assertionFailure("map was not set correclty")
+            return
+        }
         guard !isCustomTiledLayerDisplayed(layerId: layerId) else {
-            preconditionFailure("layer with id: \(layerId) already displayed")
+            assertionFailure("layer with id: \(layerId) already displayed")
+            return
         }
 
         let tileGenerator = YaTilesGenerator(generator: generator, projection: mercator)
