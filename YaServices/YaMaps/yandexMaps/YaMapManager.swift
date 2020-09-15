@@ -573,6 +573,8 @@ public class YaMapManager: BaseMapManager {
     // MARK: - map view
 
     override public func mapView() -> UIView {
+        invalidateMapView()
+        
         let view = YMKMapView()
 
         let map = view.mapWindow.map
